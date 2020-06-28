@@ -1,0 +1,1 @@
+tellraw @a[gamemode=creative] {"text":"[ Easy Loot V1.0] \u27a4","color":"aqua","clickEvent":{"action":"run_command","value":"/function cw_el:menu/main"},"hoverEvent":{"action":"show_text","value":"Make & Edit Loot Tables IN GAME with ease!"}}
