@@ -30,9 +30,5 @@ execute if score item cw_loot matches 24 run data remove entity @s Item.tag.SLOT
 execute if score item cw_loot matches 25 run data remove entity @s Item.tag.SLOTS[25]
 execute if score item cw_loot matches 26 run data remove entity @s Item.tag.SLOTS[26]
 
-#tellraw @a ["",{"text":"Diff: ","color":"yellow"},{"score":{"name":"diff","objective":"cw_loot"},"color":"gold"}]
-#tellraw @a ["",{"text":"CONT: ","color":"green"},{"score":{"name":"contents","objective":"cw_loot"},"color":"blue"}]
-#tellraw @a ["",{"text":"RNG: ","color":"dark_purple"},{"score":{"name":"item","objective":"cw_loot"},"color":"light_purple"}]
-
 scoreboard players remove diff cw_loot 1
 execute if score diff cw_loot matches 1.. run function cw_el:insert/chest/slot_rng
